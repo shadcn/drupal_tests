@@ -1,0 +1,23 @@
+default:
+  paths:
+    features: 'features'
+  filters:
+    tags: "~@chrome"
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://192.168.56.123
+      files_path: ./
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      drush:
+        alias: self
+      api_driver: 'drupal'
+      drupal:
+        drupal_root: '/home/vagrant/sites/'
+      region_map:
+        Main menu: "#main-menu"
+        Header: "#header"
+        Content: "#content"
+        Footer: "#footer"

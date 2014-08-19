@@ -1,0 +1,5 @@
+<?php
+/**
+ * @file
+ * Skeleton Drupal feature for Acceptance testing with Behat.
+ */

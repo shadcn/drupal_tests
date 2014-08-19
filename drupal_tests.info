@@ -1,0 +1,6 @@
+name = Drupal Tests
+description = Skeleton Drupal feature for Acceptance testing with Behat.
+core = 7.x
+package = Tests
+version = 7.x-1.0
+features[features_api][] = api:2
