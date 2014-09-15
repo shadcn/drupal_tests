@@ -15,7 +15,7 @@ default:
         alias: self
       api_driver: 'drupal'
       drupal:
-        drupal_root: '/home/vagrant/sites/'
+        drupal_root: '/home/vagrant/www/'
       region_map:
         Main menu: "#main-menu"
         Header: "#header"
