@@ -11,9 +11,11 @@ Skeleton Drupal feature for Acceptance testing with Behat
    `$ php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"`
 
  4. Install Behat and dependencies via Composer:
-
-    `$ cd tests`
-    `$ php composer.phar install`
+    
+    ```
+    $ cd tests
+    $ php composer.phar install
+    ```
 
  5. Copy tests/behat.template.yml to tests/behat.yml and modify:
 
