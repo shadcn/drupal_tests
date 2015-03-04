@@ -1,14 +1,20 @@
 default:
   paths:
     features: 'features'
-  filters:
-    tags: "~@chrome"
+    bootstrap: 'features/bootstrap'
   extensions:
     Behat\MinkExtension\Extension:
       goutte: ~
-      selenium2: ~
-      base_url: http://192.168.56.123
-      files_path: ./
+      javascript_session: selenium2
+      selenium2:
+        wd_host: http://192.168.56.22:4444/wd/hub
+        browser: firefox
+        capabilities:
+          browser : firefox
+          browserName: firefox
+          browserVersion : ANY
+          version: ANY
+      base_url: http://192.168.56.22
     Drupal\DrupalExtension\Extension:
       blackbox: ~
       drush:
@@ -18,6 +24,6 @@ default:
         drupal_root: '/home/vagrant/www/'
       region_map:
         Main menu: "#main-menu"
-        Header: "#header"
+        Header: "#section-header"
         Content: "#content"
         Footer: "#footer"
